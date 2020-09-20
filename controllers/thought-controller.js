@@ -25,7 +25,7 @@ const ThoughtController = {
     },
 
     // createThought
-    addThought({ params, body }, res) {
+    createThought({ params, body }, res) {
         console.log(body);
         Thought.create(body)
           .then(({ _id }) => {
